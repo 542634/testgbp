@@ -51,6 +51,30 @@
             "default": "点击我"
           }
         ]
+      },
+      {
+        "name": "RealTimeData",
+        "exposePath": "./basic/RealTimeData",
+        "label": "实时数据控件",
+        "description": "用于展示实时数据的控件。",
+        "icon": "iconfont gcbp-ide-biaoqian",
+        "category": "basic",
+        "props": [
+          {
+            "name": "title",
+            "type": "string",
+            "default": "实时数据"
+          },
+          {
+            "name": "data",
+            "type": "array",
+            "default": [
+              { "label": "温度", "value": "25°C" },
+              { "label": "湿度", "value": "60%" },
+              { "label": "PM2.5", "value": "35 μg/m³" }
+            ]
+          }
+        ]
       }
     ],
     "form": [],

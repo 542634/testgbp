@@ -1,0 +1,33 @@
+
+.real-time-data[data-v-ff48dd84] {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.real-time-data h3[data-v-ff48dd84] {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: #333;
+}
+.data-list[data-v-ff48dd84] {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.data-item[data-v-ff48dd84] {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+.data-label[data-v-ff48dd84] {
+  font-weight: bold;
+  color: #333;
+}
+.data-value[data-v-ff48dd84] {
+  color: #007bff;
+}
+
+
+/*# sourceMappingURL=273.d3dcecee.chunk.css.map*/
