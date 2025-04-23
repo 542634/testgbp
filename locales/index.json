@@ -1,0 +1,23 @@
+{
+  "en": {
+    "GcdpDemoWidgetsWeb": {
+      "widgets": {
+        "GcdpOpenModalAction": {
+          "label": "open modal",
+          "warningMessage": "You have not associated or bound the popup control"
+        }
+      }
+    }
+  },
+  "sv-SE": {},
+  "zh-CN": {
+    "GcdpDemoWidgetsWeb": {
+      "widgets": {
+        "GcdpOpenModalAction": {
+          "openModal": "打开弹框",
+          "warningMessage": "您未关联绑定弹窗控件"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "WorkspaceBusinessWidgetsWeb",
+  "packageName": "@workspace/business-widgets-web",
+  "label": "某组织团队Web端业务控件库",
+  "description": "某组织团队Web端业务控件库描述",
+  "workspace": "workspace",
+  "groups": [
+    {
+      "type": "prop",
+      "name": "basic",
+      "label": "基础",
+      "visiableLabel": true
+    },
+    {
+      "type": "prop",
+      "name": "advanced",
+      "label": "高级",
+      "visiableLabel": true
+    },
+    {
+      "type": "event",
+      "name": "handler",
+      "label": "事件",
+      "visiableLabel": false
+    }
+  ],
+  "widgets": {
+    "layout": [],
+    "basic": [
+      {
+        "name": "NewWidget",
+        "exposePath": "./basic/NewWidget",
+        "label": "新控件",
+        "description": "这是一个新创建的控件，用于展示基本功能。",
+        "icon": "iconfont gcbp-ide-biaoqian",
+        "category": "basic",
+        "props": [
+          {
+            "name": "title",
+            "type": "string",
+            "default": "新控件"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "default": "这是一个新创建的控件，用于展示基本功能。"
+          },
+          {
+            "name": "buttonText",
+            "type": "string",
+            "default": "点击我"
+          }
+        ]
+      }
+    ],
+    "form": [],
+    "chart": [],
+    "action": [],
+    "advanced": []
+  }
+}

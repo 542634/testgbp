@@ -1,0 +1,32 @@
+
+.new-widget[data-v-dba06abe] {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+.new-widget h3[data-v-dba06abe] {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #333;
+}
+.new-widget p[data-v-dba06abe] {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #666;
+}
+.new-widget button[data-v-dba06abe] {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.new-widget button[data-v-dba06abe]:hover {
+  background-color: #0056b3;
+}
+
+
+/*# sourceMappingURL=321.4d69d7ba.chunk.css.map*/
