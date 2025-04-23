@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["WorkspaceBusinessWidgetsWeb"] = factory();
+		exports["SmartConstructionWidgetsWeb"] = factory();
 	else
-		root["WorkspaceBusinessWidgetsWeb"] = factory();
+		root["SmartConstructionWidgetsWeb"] = factory();
 })(self, function() {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
@@ -70,7 +70,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + "5352eb93" + ".js";
+/******/ 			return "js/" + chunkId + "." + "8b0385bf" + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	
@@ -91,7 +91,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	/* webpack/runtime/load script */
 /******/ 	!function() {
 /******/ 		var inProgress = {};
-/******/ 		var dataWebpackPrefix = "@workspace/business-widgets-web:";
+/******/ 		var dataWebpackPrefix = "@SmartConstructionWidgetsWeb:";
 /******/ 		// loadScript function to load a script via script tag
 /******/ 		__webpack_require__.l = function(url, done, key, chunkId) {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
@@ -213,7 +213,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 			// runs all init snippets from all modules reachable
 /******/ 			var scope = __webpack_require__.S[name];
 /******/ 			var warn = function(msg) { return typeof console !== "undefined" && console.warn && console.warn(msg); };
-/******/ 			var uniqueName = "@workspace/business-widgets-web";
+/******/ 			var uniqueName = "@SmartConstructionWidgetsWeb";
 /******/ 			var register = function(name, version, factory, eager) {
 /******/ 				var versions = scope[name] = scope[name] || {};
 /******/ 				var activeVersion = versions[version];
@@ -306,7 +306,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		}
 /******/ 		// object to store loaded CSS chunks
 /******/ 		var installedCssChunks = {
-/******/ 			250: 0
+/******/ 			233: 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = function(chunkId, promises) {
@@ -337,7 +337,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			250: 0
+/******/ 			233: 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = function(chunkId, promises) {
@@ -416,7 +416,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunk_workspace_business_widgets_web"] = self["webpackChunk_workspace_business_widgets_web"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunk_SmartConstructionWidgetsWeb"] = self["webpackChunk_SmartConstructionWidgetsWeb"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();
