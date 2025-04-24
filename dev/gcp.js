@@ -240,7 +240,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "https://542634.github.io/testgbpdev/";
+/******/ 		__webpack_require__.p = "https://542634.github.io/testgbp/dev/";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/css loading */
