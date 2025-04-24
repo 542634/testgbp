@@ -24,6 +24,7 @@
       "visiableLabel": false
     }
   ],
+  "url": "https://542634.github.io/testgbp/",
   "widgets": {
     "layout": [],
     "basic": [
@@ -61,7 +62,7 @@
         "description": "用于展示实时数据的控件。",
         "icon": "iconfont gcbp-ide-biaoqian",
         "category": "basic",
-        "matchCores": null,
+         "matchCores": null,
         "matchViews": null,
         "props": [
           {
