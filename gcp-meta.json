@@ -41,10 +41,13 @@
         "matchViews": null,
         "props": [
           {
-            "name": "title",
+            "defaultValue": "标题",
+            "description": "主标题文本",
+            "editorType": "string",
+            "group": "basic",
             "label": "标题",
-            "type": "string",
-            "defaultValue": "默认标题"
+            "name": "title_text",
+            "type": "string"
           },
           {
             "name": "content",
