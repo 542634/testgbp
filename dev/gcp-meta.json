@@ -37,7 +37,39 @@
         "category": "action",
         "matchCores": null,
         "matchViews": null,
-        "description": "施工看板"
+        "description": "施工看板",
+        "props": [
+          {
+            "name": "mapKey",
+            "label": "地图Key",
+            "required": true,
+            "type": "string",
+            "editorType": "string",
+            "defaultValue": "",
+            "group": "basic",
+            "description": "输入地图Key"
+          },
+          {
+            "name": "center",
+            "label": "地图中心点",
+            "required": true,
+            "type": "string",
+            "editorType": "string",
+            "defaultValue": "",
+            "group": "basic",
+            "description": "输入地图中心点"
+            },
+          {
+            "name": "zoom",
+            "label": "地图缩放比例",
+            "required": true,
+            "type": "number",
+            "editorType": "number",
+            "defaultValue": "",
+            "group": "basic",
+            "description": "输入地图缩放比例"
+          }
+        ]
       }
     ],
     "action": [],
