@@ -1,0 +1,60 @@
+
+.real-time-data[data-v-1ad5136b] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.map-container[data-v-1ad5136b] {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+.info-panel[data-v-1ad5136b] {
+  position: absolute;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.top-panel[data-v-1ad5136b] {
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bottom-panel[data-v-1ad5136b] {
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left-panel[data-v-1ad5136b] {
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.right-panel[data-v-1ad5136b] {
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+.data-list[data-v-1ad5136b] {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.data-item[data-v-1ad5136b] {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+.data-label[data-v-1ad5136b] {
+  font-weight: bold;
+  color: #333;
+}
+.data-value[data-v-1ad5136b] {
+  color: #007bff;
+}
+
+
+/*# sourceMappingURL=396.99574c79.chunk.css.map*/

@@ -30,7 +30,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -70,7 +70,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"273":"d6ba6255","493":"8d707a79"}[chunkId] + ".js";
+/******/ 			return "js/" + (chunkId === 216 ? "vendors" : chunkId) + "." + {"216":"1c0f0aae","396":"b84b533a"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	
@@ -79,8 +79,20 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.miniCssF = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + chunkId + "." + {"273":"d3dcecee","493":"215d6124"}[chunkId] + ".chunk.css";
+/******/ 			return "css/" + chunkId + "." + "99574c79" + ".chunk.css";
 /******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -310,7 +322,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = function(chunkId, promises) {
-/******/ 			var cssChunks = {"273":1,"493":1};
+/******/ 			var cssChunks = {"396":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(function() {
@@ -427,11 +439,8 @@ var __webpack_exports__ = {};
 !function() {
 var exports = __webpack_exports__;
 var moduleMap = {
-	"./basic/NewWidget": function() {
-		return __webpack_require__.e(493).then(function() { return function() { return (__webpack_require__(493)); }; });
-	},
 	"./basic/RealTimeData": function() {
-		return __webpack_require__.e(273).then(function() { return function() { return (__webpack_require__(273)); }; });
+		return Promise.all([__webpack_require__.e(216), __webpack_require__.e(396)]).then(function() { return function() { return (__webpack_require__(7396)); }; });
 	}
 };
 var get = function(module, getScope) {
