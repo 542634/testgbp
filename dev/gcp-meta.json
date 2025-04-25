@@ -28,138 +28,19 @@
     "layout": [],
     "basic": [],
     "form": [],
-    "chart": [],
-    "action": [
+    "chart": [
       {
-        "name": "SmartModal",
-        "label": "智慧工地弹窗",
-        "description": "可配置标题、内容和背景颜色的弹窗组件",
-        "exposePath": "./action/SmartModal",
+        "name": "index",
+        "exposePath": "./action/index",
+        "label": "施工看板",
         "icon": "el-icon-add",
         "category": "action",
         "matchCores": null,
         "matchViews": null,
-        "props": [
-          {
-            "defaultValue": "智慧工地通知",
-            "description": "弹窗标题文本",
-            "editorType": "string",
-            "group": "basic",
-            "label": "标题",
-            "name": "title",
-            "type": "string"
-          },
-          {
-            "defaultValue": "默认内容",
-            "description": "弹窗内容文本",
-            "editorType": "string",
-            "group": "basic",
-            "label": "内容",
-            "name": "content",
-            "type": "string"
-          },
-          {
-            "defaultValue": "rgba(0, 0, 0, 0.5)",
-            "description": "遮罩层背景颜色",
-            "editorType": "color",
-            "group": "basic",
-            "label": "遮罩背景色",
-            "name": "maskColor",
-            "type": "string"
-          },
-          {
-            "defaultValue": "#ffffff",
-            "description": "内容区域背景颜色",
-            "editorType": "color",
-            "group": "basic",
-            "label": "内容背景色",
-            "name": "contentBgColor",
-            "type": "string"
-          },
-          {
-            "defaultValue": 520,
-            "description": "弹窗宽度，支持数字(px)或字符串(百分比)",
-            "editorType": "number",
-            "group": "advanced",
-            "label": "宽度",
-            "name": "width",
-            "type": "number"
-          },
-          {
-            "defaultValue": "auto",
-            "description": "弹窗高度，支持auto或具体高度值",
-            "editorType": "string",
-            "group": "advanced",
-            "label": "高度",
-            "name": "height",
-            "type": "string"
-          },
-          {
-            "defaultValue": "80vh",
-            "description": "弹窗最大高度",
-            "editorType": "string",
-            "group": "advanced",
-            "label": "最大高度",
-            "name": "maxHeight",
-            "type": "string"
-          },
-          {
-            "defaultValue": "auto",
-            "description": "内容区域高度",
-            "editorType": "string",
-            "group": "advanced",
-            "label": "内容高度",
-            "name": "contentHeight",
-            "type": "string"
-          },
-          {
-            "defaultValue": "calc(80vh - 120px)",
-            "description": "内容区域最大高度",
-            "editorType": "string",
-            "group": "advanced",
-            "label": "内容最大高度",
-            "name": "contentMaxHeight",
-            "type": "string"
-          },
-          {
-            "defaultValue": true,
-            "description": "是否显示图标",
-            "editorType": "boolean",
-            "group": "advanced",
-            "label": "显示图标",
-            "name": "showIcon",
-            "type": "boolean"
-          },
-          {
-            "defaultValue": "notification",
-            "description": "图标类型，支持ant-design图标类型",
-            "editorType": "string",
-            "group": "advanced",
-            "label": "图标类型",
-            "name": "iconType",
-            "type": "string"
-          },
-          {
-            "defaultValue": "#1890ff",
-            "description": "图标颜色",
-            "editorType": "color",
-            "group": "advanced",
-            "label": "图标颜色",
-            "name": "iconColor",
-            "type": "string"
-          },
-          {
-            "defaultValue": "",
-            "description": "底部文本内容",
-            "editorType": "string",
-            "group": "advanced",
-            "label": "底部文本",
-            "name": "footerText",
-            "type": "string"
-          }
-        ]
+        "description": "施工看板"
       }
     ],
+    "action": [],
     "advanced": []
   }
 }
