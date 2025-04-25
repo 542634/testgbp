@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["SmartConstructionWidgetsWeb"] = factory();
+		exports["WorkspaceSmartConstructionWidgetsWeb"] = factory();
 	else
-		root["SmartConstructionWidgetsWeb"] = factory();
+		root["WorkspaceSmartConstructionWidgetsWeb"] = factory();
 })(self, function() {
 return /******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
@@ -30,7 +30,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -70,7 +70,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + (chunkId === 216 ? "vendors" : chunkId) + "." + {"216":"1c0f0aae","396":"b84b533a"}[chunkId] + ".js";
+/******/ 			return "js/" + (chunkId === 216 ? "vendors" : chunkId) + "." + {"216":"eb7a543d","603":"612a25ad"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	
@@ -79,20 +79,8 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.miniCssF = function(chunkId) {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + chunkId + "." + "99574c79" + ".chunk.css";
+/******/ 			return "css/" + chunkId + "." + "cd5b7155" + ".chunk.css";
 /******/ 		};
-/******/ 	}();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	!function() {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -103,7 +91,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 	/* webpack/runtime/load script */
 /******/ 	!function() {
 /******/ 		var inProgress = {};
-/******/ 		var dataWebpackPrefix = "@smart-construction/widgets-web:";
+/******/ 		var dataWebpackPrefix = "@workspace/smart-construction-widgets-web:";
 /******/ 		// loadScript function to load a script via script tag
 /******/ 		__webpack_require__.l = function(url, done, key, chunkId) {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
@@ -225,7 +213,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 			// runs all init snippets from all modules reachable
 /******/ 			var scope = __webpack_require__.S[name];
 /******/ 			var warn = function(msg) { return typeof console !== "undefined" && console.warn && console.warn(msg); };
-/******/ 			var uniqueName = "@smart-construction/widgets-web";
+/******/ 			var uniqueName = "@workspace/smart-construction-widgets-web";
 /******/ 			var register = function(name, version, factory, eager) {
 /******/ 				var versions = scope[name] = scope[name] || {};
 /******/ 				var activeVersion = versions[version];
@@ -318,11 +306,11 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		}
 /******/ 		// object to store loaded CSS chunks
 /******/ 		var installedCssChunks = {
-/******/ 			233: 0
+/******/ 			83: 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = function(chunkId, promises) {
-/******/ 			var cssChunks = {"396":1};
+/******/ 			var cssChunks = {"603":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(function() {
@@ -349,7 +337,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			233: 0
+/******/ 			83: 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = function(chunkId, promises) {
@@ -428,7 +416,7 @@ return /******/ (function() { // webpackBootstrap
 /******/ 		
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunk_smart_construction_widgets_web"] = self["webpackChunk_smart_construction_widgets_web"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunk_workspace_smart_construction_widgets_web"] = self["webpackChunk_workspace_smart_construction_widgets_web"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();
@@ -439,8 +427,8 @@ var __webpack_exports__ = {};
 !function() {
 var exports = __webpack_exports__;
 var moduleMap = {
-	"./basic/RealTimeData": function() {
-		return Promise.all([__webpack_require__.e(216), __webpack_require__.e(396)]).then(function() { return function() { return (__webpack_require__(7396)); }; });
+	"./action/SmartModal": function() {
+		return Promise.all([__webpack_require__.e(216), __webpack_require__.e(603)]).then(function() { return function() { return (__webpack_require__(603)); }; });
 	}
 };
 var get = function(module, getScope) {

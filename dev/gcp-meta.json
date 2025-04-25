@@ -1,8 +1,8 @@
 {
-  "name": "SmartConstructionWidgetsWeb",
-  "packageName": "@SmartConstructionWidgetsWeb",
-  "label": "智能建设控件库",
-  "description": "智能建设控件库描述",
+  "name": "WorkspaceSmartConstructionWidgetsWeb",
+  "packageName": "@workspace/smart-construction-widgets-web",
+  "label": "智慧工地Web端业务控件库",
+  "description": "智慧工地Web端业务控件库，提供智慧工地相关的业务组件",
   "workspace": "workspace",
   "groups": [
     {
@@ -24,66 +24,49 @@
       "visiableLabel": false
     }
   ],
-  "url": "https://542634.github.io/testgbp/",
   "widgets": {
     "layout": [],
-    "basic": [
+    "basic": [],
+    "form": [],
+    "chart": [],
+    "action": [
       {
-        "name": "RealTimeData",
-        "exposePath": "./basic/RealTimeData",
-        "label": "实时数据控件",
-        "description": "以高德地图为背景，展示环境监测、能源消耗、施工晴雨表和项目预警信息。",
-        "icon": "iconfont gcbp-ide-shishishuju",
-        "category": "basic",
+        "name": "SmartModal",
+        "label": "智慧工地弹窗",
+        "description": "可配置标题、内容和背景颜色的弹窗组件",
+        "exposePath": "./action/SmartModal",
+        "icon": "el-icon-add",
+        "category": "action",
         "matchCores": null,
         "matchViews": null,
         "props": [
           {
-            "name": "environmentData",
-            "label": "环境监测数据",
-            "type": "array",
-            "default": [
-              { "label": "PM2.5", "value": "35 μg/m³" },
-              { "label": "温度", "value": "25°C" },
-              { "label": "湿度", "value": "60%" }
-            ]
+            "name": "title",
+            "label": "标题",
+            "type": "string",
+            "defaultValue": "默认标题"
           },
           {
-            "name": "energyData",
-            "label": "能源消耗数据",
-            "type": "array",
-            "default": [
-              { "label": "电力消耗", "value": "120 kWh" },
-              { "label": "水消耗", "value": "15 m³" },
-              { "label": "燃气消耗", "value": "8 m³" }
-            ]
+            "name": "content",
+            "label": "内容",
+            "type": "string",
+            "defaultValue": "默认内容"
           },
           {
-            "name": "weatherData",
-            "label": "施工晴雨表数据",
-            "type": "array",
-            "default": [
-              { "label": "今日天气", "value": "晴" },
-              { "label": "风速", "value": "5 km/h" },
-              { "label": "降水概率", "value": "10%" }
-            ]
+            "name": "maskColor",
+            "label": "遮罩背景色",
+            "type": "string",
+            "defaultValue": "rgba(0, 0, 0, 0.5)"
           },
           {
-            "name": "warningData",
-            "label": "项目预警信息",
-            "type": "array",
-            "default": [
-              { "label": "安全隐患", "value": "2条" },
-              { "label": "进度延误", "value": "1项" },
-              { "label": "质量问题", "value": "0项" }
-            ]
+            "name": "contentBgColor",
+            "label": "内容背景色",
+            "type": "string",
+            "defaultValue": "#ffffff"
           }
         ]
       }
     ],
-    "form": [],
-    "chart": [],
-    "action": [],
     "advanced": []
   }
 }
